@@ -1,0 +1,33 @@
++---------------------------------------+
+|            Think One Zero             |
+|     http://thinkonezero.com           |
+|     kai[AT]thinkonezero[DOT]com       |
++---------------------------------------+
+
+Github Information
+User: phikai
+Branch:  phikai / twitter-pictures-to-tumblr  
+
+== About Twitter-Pictures-to-Tumblr ==
+The Twitter-Pictures-to-Tumblr project comes from an idea @MrCippy (http://twitter.com/MrCippy - https://github.com/mrcippy) and I had. We wanted to aggregate pictures around a specific hashtag and post them to a website. We ended up using Tumblr as the service because its free and has an easy API to interface with. The downside is that tumblr only allows 75 posts a day so we've run into issues with the services stopping. Hopefully someone finds it useful and continues to expand on the project.
+
+The project is based on PHP/MySQL. The MySQL database is used for catching duplicate photos so that they aren't posted again when someone retweet's something.
+
+The project currently supports several of the more popular photo sharing services on twitter including: twitpic, yfrog, instagram, picplz and flickr. It's also able to check t.co shortened urls, foursquare pictures, and posterous.
+
+
+== Install ==
+I've tried my best to make this easy...
+
+1. Download the source code to the project
+2. Setup your MySQL Table using the table-structure.sql file
+3. Setup your tumblr site
+4. Edit the config.php file with the appropriate values
+5. Setup a cron job to run the index.php file as often as you'd like
+6. Hopefully the magic happens and pictures are posted to the tumblr blog 
+
+
+== Examples ==
+http://chompisthenewnom.com/
+http://nascarpics.tumblr.com/
+http://pgapics.tumblr.com/
